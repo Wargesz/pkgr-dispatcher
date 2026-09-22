@@ -1,0 +1,8 @@
+{
+  "name": "ncurses",
+  "source": "https://mirrors.liquidweb.com/gnu/ncurses/ncurses-6.6.tar.gz",
+  "steps": [
+    "./configure --prefix=$PREFIX",
+    "make -j$NPROC install"
+  ]
+}
