@@ -74,10 +74,6 @@ func build(w http.ResponseWriter, r *http.Request) {
 			log.Println("write:", err)
 			break
 		}
-		_, _, err = c.ReadMessage()
-		if err != nil {
-			log.Panic("read:", err)
-		}
 		delete(conns, c)
 	}
 }
